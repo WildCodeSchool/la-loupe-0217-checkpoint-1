@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cestpasfaux.com</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body class="kaamelott-font">
+    <div class="container" id="addcitation">
+        <h1>A toi de jouer !</h1><br>
+        <button type="button" class="btn btn-default pull-right"><a = href="index.html">Ou retourne te marrer !</a></button>
+        <div class="row">
+            <div class="col-sm-6">
+                <form>
+                    <div class="input-group kaamelott-underline">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="text" class="form-control" name="user" placeholder="T'es qui toi ?">
+                    </div><br>
+                    <div class="input-group kaamelott-underline">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-align-left"></i></span>
+                        <input id="citation" type="text" class="form-control" name="citation" placeholder="Exprimes-toi mon copain">
+                    </div><br>
+                    <div class="input-group kaamelott-underline">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-facetime-video"></i></span>
+                        <input id="episode" type="text" class="form-control" name="episode" placeholder="C'est dans quel épisode ?">
+                    </div><br>
+                    <div class="input-group kaamelott-underline">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-facetime-video"></i></span>
+                        <input id="saison" type="text" class="form-control" name="saison" placeholder="Et dans quelle saison ?">
+                    </div><br>
+                    <div class="input-group kaamelott-underline" id="datetimepicker1">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        <input id="calendar" type="text" class="form-control" name="calendar" placeholder="C'est quand qu'on est ?">
+                    </div>
+                </form><br>
+                <button type="button" class="btn btn-success pull-right">C'est tout bon, click ici</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vendor/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#datetimepicker1').datetimepicker();
+        });
+
+            var user = "";
+            var citation = "";
+            var episode = "";
+            var saison = "";
+            var calendar = "";
+        function getArticles() {
+            const xhr = new XMLHttpRequest()
+                xhr.open('GET', 'http://localhost:8080/db.json/', false);
+                xhr.send(null);
+                  document.getElementById
+            }
+            }
+    </script>
+
+</body>
+
+</html>
