@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Quote</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top fond">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <img class="logo" src="img/logo.gif" alt="logo">
+                <a href="index.html"> </a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="addquote.html">Ajoute un citation</a></li>
+
+                        <li class="dropdown">
+                            <ul class="dropdown-menu"> </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 form">
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Auteur</label>
+                        <input type="text" class="form-control" id="auteur" placeholder="nom de l'auteur">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Citation</label>
+                        <input type="text" class="form-control" id="citation" placeholder="Tapez votre citation ici">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Saison</label>
+                                <input type="text" class="form-control" id="saison" placeholder="Saison de votre citation">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">épisode</label>
+                                <input type="text" class="form-control" id="episode" placeholder="épisode de votre citation">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <!-- Date input -->
+                        <label class="control-label" for="date">Date</label>
+                        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <!-- Submit button -->
+                        <button class="btn btn-primary " id="submit" name="submit" type="submit">Submit</button>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+</body>
+
+</html>
