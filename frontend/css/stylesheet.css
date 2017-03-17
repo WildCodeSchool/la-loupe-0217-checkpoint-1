@@ -12,6 +12,25 @@
 1. Font
 ==================================================
 \************************************************/
+
+.logo {
+
+/*position: absolute;
+left:10px;
+top:15px ;*/
+height: 50px;
+width: 50px;
+}
+
+
+
+.navbar-right {
+position: absolute;
+right: 20px;
+top: 10px;
+
+}
+
 @font-face {
   font-family: 'Folkard';
   src: url('/fonts/folkard_.ttf');
@@ -104,9 +123,15 @@ blockquote {
   background-color: #996f21;
 }
 
+.footer{
 
-/************************************************\
-==================================================
-4. Footer
-==================================================
-\************************************************/
+background-color: #a57824;
+height: 120px;
+
+}
+.icones {
+
+text-align: center;
+margin: 20px
+
+}
