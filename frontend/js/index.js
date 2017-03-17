@@ -25,7 +25,7 @@ function getArticles() {
               </p>
               <span class="hider"></span>
             </div>
-            <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#${quote.id}">Voir plus</a></p>
+            <p class="item-actions"><a onclick="deleteArticles(${quote.id})" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#${quote.id}">Voir plus</a></p>
           </div>
         </div>
         <!-- Modal -->
@@ -58,3 +58,10 @@ function getArticles() {
 }
 
 getArticles()
+
+function deleteArticles(id) {
+  const xhr = new XMLHttpRequest();
+  xhr.open('DELETE', 'http://localhost:3000/articles/' + id, true);
+  xhr.send();
+  location.reload();
+}
