@@ -26,8 +26,17 @@
 2. Navbar
 ==================================================
 \************************************************/
+#lien {
+  height: 150%;
+  width: 150%;
+  text-align: justify;
+}
 
-
+#form {
+  margin-left: 65vw;
+  margin-top: 0.5em;
+  text-align: justify;
+}
 /************************************************\
 ==================================================
 3. Citation
@@ -110,3 +119,21 @@ blockquote {
 4. Footer
 ==================================================
 \************************************************/
+footer{
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.formulaire {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+ .form-control {
+   margin-top: 2em;
+   margin-bottom: 2em;
+ }
+ .twit{
+   margin-left: 1em;
+   margin-right: 1em;
+ }
