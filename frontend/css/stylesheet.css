@@ -24,13 +24,28 @@
 	height: 100%;
 	width: auto;
 }
+.ban{margin-top: -15px;}
 
 /************************************************\
 ==================================================
 2. Navbar
 ==================================================
 \************************************************/
+.navbar{
+	border-bottom: 1px solid black;
+	height: 75px;
 
+
+}
+
+.logo{
+	height: 60px;
+}
+.crée{
+	margin-top: 1%;
+	font-size: 20px;
+	padding-right: 2%;
+}
 
 /************************************************\
 ==================================================
@@ -40,9 +55,12 @@
 .kaamelott-underline {
   border-bottom: solid 5px #a57824;
 }
+.couleur{
+	color:a57824;
+}
 
 .kaamelott-banner.jumbotron {
-  background-image: url('/img/kaamelott-banner.jpg');
+  background-image: url('img/kaamelott-banner.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,3 +132,20 @@ blockquote {
 4. Footer
 ==================================================
 \************************************************/
+.footer{
+	background-color:#996f21;
+	font-size: 30px;
+	height: 100px;
+
+}
+.picto{
+	margin-top: %;
+		letter-spacing: 20px;
+}
+.text-footer{
+	color: white;
+	font-weight: bold;
+	opacity: 0.4;
+	font-size: 15px;
+	margin-top: 1%;
+}
