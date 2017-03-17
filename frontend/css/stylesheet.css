@@ -14,7 +14,7 @@
 \************************************************/
 @font-face {
   font-family: 'Folkard';
-  src: url('/fonts/folkard_.ttf');
+  src: url('../fonts/folkard_.ttf');
 }
 
 .kaamelott-font {
@@ -37,8 +37,8 @@
   border-bottom: solid 5px #a57824;
 }
 
-.kaamelott-banner.jumbotron {
-  background-image: url('/img/kaamelott-banner.jpg');
+#kaamelott-banner {
+  background-image: url('../img/kaamelott-banner.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,3 +110,8 @@ blockquote {
 4. Footer
 ==================================================
 \************************************************/
+
+#footer {
+  border: 2px black solid;
+  height: 100px;
+}
