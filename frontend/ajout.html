@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cestpasfaux.com</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- Add nav here -->
+
+    <nav class="navbar navbar-default">
+      <img src="img/logok.gif" href="#" alt="logo">
+
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+
+            <li><a href="ajout.html">Ajout citation</a></li>
+
+        </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="kaamelott-banner jumbotron kaamelott-underline">
+            <h1>C'EST PAS FAUX !</h1>
+            <p>Les meilleurs citations de la serie-TV Kaamelott</p>
+        </div>
+
+
+        <div>
+            <form>
+                Auteur:<br>
+                <input type="text" name="auteur"><br> Citation:
+                <br>
+                <input type="text" name="citation"><br> Episode:
+                <br>
+                <input type="text" name="citation"><br> Saison:
+                <br>
+                <input type="text" name="citation"><br> Date:
+                <br>
+                <input type="date" name="date"><br> Image:
+                <br>
+                <input type="file" name="filename" accept="image/gif, image/jpeg, image/png">
+
+            </form>
+        </div>
+
+
+
+
+
+
+        <footer>
+            <!-- Add footer here -->
+            <ul>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.github.com/"><i class="fa fa-github"></i></a>
+
+            </ul>
+        </footer>
+
+        <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="vendor/jquery-3.1.1.min.js"></script>
+
+        <script>
+            function reqListener() {
+                console.log(this.responseText);
+            }
+
+            var oReq = new XMLHttpRequest();
+            oReq.onload = reqListener;
+            oReq.open("get", "http://localhost:3000/articles", true);
+            oReq.send();
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $.getJSON("http://localhost:3000/articles", function(result){
+                $.each(result, function(i, field){
+                    $("div").append(field + " ");
+                });
+            });
+        });
+    });
+    </script>
+    </head>
+    <body>
+
+    <button>Get quotes</button>
+
+    <div></div>
+
+
+
+</body>
+
+</html>
