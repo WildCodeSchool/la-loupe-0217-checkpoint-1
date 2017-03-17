@@ -14,7 +14,7 @@
 \************************************************/
 @font-face {
   font-family: 'Folkard';
-  src: url('fonts/folkard_.ttf');
+  src: url('../fonts/folkard_.ttf');
 }
 
 .kaamelott-font {
