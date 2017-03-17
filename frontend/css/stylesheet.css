@@ -10,8 +10,13 @@
 /************************************************\
 ==================================================
 1. Font
+
 ==================================================
 \************************************************/
+
+body{
+  background-color: grey;
+}
 @font-face {
   font-family: 'Folkard';
   src: url('/fonts/folkard_.ttf');
@@ -27,18 +32,59 @@
 ==================================================
 \************************************************/
 
-
+.navbar-static-top{
+  width: 100%;
+  background-color: brown;
+}
+#btn-home{
+  margin-right: 33%;
+  width: 5%;
+  min-width: 50px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
 /************************************************\
 ==================================================
 3. Citation
 ==================================================
 \************************************************/
+.add-citation{
+  display: inline;
+  font-size: 25px;
+}
+#inputEmail1{
+width: 35%;
+}
+#inputEmail3{
+width: 85%
+}
+#inputEmail5{
+width: 25%;
+}
+.btn-default{
+  background-color: lightgreen;
+  border-radius: 20px;
+}
+.btn-default:hover{
+background-color:  #04bf00;
+}
+
+
+
+
+
 .kaamelott-underline {
   border-bottom: solid 5px #a57824;
 }
 
 .kaamelott-banner.jumbotron {
-  background-image: url('/img/kaamelott-banner.jpg');
+  background-image: url('img/kaamelott-banner.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,3 +156,13 @@ blockquote {
 4. Footer
 ==================================================
 \************************************************/
+
+footer {
+    margin: auto 0;
+    text-align: center;
+    width: auto;
+    background-color: lightgrey;
+}
+.container-footer{
+  font-size: 3vw;
+}
