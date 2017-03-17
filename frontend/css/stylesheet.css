@@ -16,15 +16,9 @@
   font-family: 'Folkard';
   src: url('/fonts/folkard_.ttf');
 }
-
 .kaamelott-font {
   font-family: 'Folkard';
 }
-.banniere{
-	height: 100%;
-	width: auto;
-}
-.ban{margin-top: -15px;}
 
 /************************************************\
 ==================================================
@@ -34,10 +28,7 @@
 .navbar{
 	border-bottom: 1px solid black;
 	height: 75px;
-
-
 }
-
 .logo{
 	height: 60px;
 }
@@ -45,8 +36,15 @@
 	margin-top: 20px;;
 	font-size: 20px;
 	padding-right: 2%;
+	text-decoration: none;
 }
-
+nav{
+	-moz-box-shadow: 0px 6px 5px 0px #656565;
+	-webkit-box-shadow: 0px 6px 5px 0px #656565;
+	-o-box-shadow: 0px 6px 5px 0px #656565;
+	box-shadow: 0px 6px 5px 0px #656565;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
+}
 /************************************************\
 ==================================================
 3. Citation
