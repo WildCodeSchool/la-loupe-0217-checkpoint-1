@@ -43,9 +43,10 @@
                 .navbar-default .navbar-text {
                     color: black;
                 }
-                .navbar-default .navbar-link {
-        color: black;}
 
+                .navbar-default .navbar-link {
+                    color: black;
+                }
                 /************************************************\
 ==================================================
 3. Citation
@@ -127,3 +128,15 @@
 4. Footer
 ==================================================
 \************************************************/
+.reseaux {
+
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.reseaux li {
+  list-style: none;
+  display: inline-block;
+}
