@@ -121,3 +121,13 @@ blockquote {
 4. Footer
 ==================================================
 \************************************************/
+.footy{
+  background-color: lightgrey;
+  height: 50px;
+  text-align: center;
+}
+
+i.rs1{
+  font-size: 30px;
+  margin: 10px;
+}

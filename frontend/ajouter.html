@@ -33,7 +33,7 @@
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="ajouter.html">Ajouter d'autres citations</a></li>
+                    <li><a href="page1.html">Page1</a></li>
                     <li><a href="index.html">Accueil</a></li>
                 </ul>
             </div>
@@ -55,47 +55,72 @@
 
 
 
-        <!-- 3EME QUOTE -->
+        <!-- FORMULAIRE -->
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <div class="img-box">
-                    <img class="kaamelott-underline" src="img/cita1p1.jpg" alt="Perceval, Livre IV, Les Chaperons">
-                </div>
-                <div class="quote">
-                    <blockquote>
-                        "Seigneur Bohort, pouvons-nous nous retirer afin d'aller prendre notre goûter ?"
-                    </blockquote>
-                    <p class="source">
-                        Gauvain,
-                        <i>Livre II : Les Tuteurs</i>
-                    </p>
-                    <span class="hider"></span>
-                </div>
-                <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#3">Voir plus</a></p>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                        <blockquote>
-                            "En plus, je connais une technique pour tuer trois hommes en un coup rien qu’avec des feuilles mortes ! Alors là, vous êtes deux, vous avez bien de la chance."
-                        </blockquote>
-                        <p class="source">
-                            Perceval,
-                            <i>Livre IV, Les Chaperons</i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <form>
+          <div class="row">
+            <div class="col-xs-offset-2 col-xs-7">
 
-        <!-- FIN 3EME QUOTE -->
+
+
+
+          <div class="row">
+<div class="col-xs-10">
+
+
+            <div class="form-group-lg">
+                <label for="exampleInputEmail1">Citation</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Citation">
+            </div>
+          </div>
+        </div>
+<div class="row">
+
+<div class="col-xs-10">
+
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Auteur</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Auteur">
+            </div>
+            </div>
+</div>
+
+            <div class="row">
+
+<div class="col-xs-3">
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Episode</label>
+                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Episode">
+                </div>
+</div>
+
+<div class="col-xs-3">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Saison</label>
+                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Saison">
+                </div>
+</div>
+
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+                <label>
+      <input type="checkbox"> Check me out
+    </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+          </div>
+        </form>
+        <!-- FIN FORMULAIRE-->
 
     </div>
     <!--CONTAINER-->

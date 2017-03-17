@@ -14,77 +14,49 @@
 
 <body>
 
-      <nav class="navbar navbar-default">
-<div class="container-fluid">
+    <nav class="navbar navbar-default">
+        <div class="container">
 
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#"><img class="logo1" alt="Brand" src="img/kaamelot.png"></a>
-  </div>
+                <a class="navbar-brand" href="index.html"><img class="logo1" alt="Brand" src="img/kaamelot.png"></a>
+            </div>
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-      <li><a href="#">Link</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">One more separated link</a></li>
-        </ul>
-      </li>
-    </ul>
-    <form class="navbar-form navbar-left">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Link</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="ajouter.html">Ajouter d'autres citations</a></li>
+                    <li><a href="page1.html">Page1</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
 
     <div class="container">
 
-      <div class="row banner1">
-
-      </div>
-
+        <div class="row banner1">
+        </div>
         <div class="kaamelott-banner jumbotron kaamelott-underline">
             <h1>C'EST PAS FAUX !</h1>
             <p>Les meilleurs citations de la serie-TV Kaamelott</p>
         </div>
 
+        <!-- 1ERE QUOTE  -->
         <div class="row">
-            <div class="col-sm-6 col-md-4">
+            <div class="col-lg-4">
                 <div class="thumbnail">
                     <div class="img-box">
-                        <img class="kaamelott-underline" src="/img/livre-1-ambidextrie.jpg" alt="Perceval, Livre I, Ambidextrie">
+                        <img class="kaamelott-underline" src="img/livre-1-ambidextrie.jpg" alt="Perceval, Livre I, Ambidextrie">
                     </div>
                     <div class="quote">
                         <blockquote>
@@ -99,6 +71,7 @@
                     <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#1">Voir plus</a></p>
                 </div>
             </div>
+
             <!-- Modal -->
             <div class="modal fade" id="1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
@@ -117,13 +90,38 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="img-box">
-                            <img class="kaamelott-underline" src="/img/livre-2-la-cassette.png" alt="Karadoc, Livre II, La Cassette">
+            <!-- FIN 1ERE QUOTE -->
+
+            <!-- 2EME QUOTE -->
+
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="img-box">
+                        <img class="kaamelott-underline" src="img/livre-2-la-cassette.png" alt="Karadoc, Livre II, La Cassette">
+                    </div>
+                    <div class="quote">
+                        <blockquote>
+                            "La politique de l'autruche, c'est une politique qui court vite, une politique qui fait des gros œufs, c'est tout."
+                        </blockquote>
+                        <p class="source">
+                            Karadoc,
+                            <i>Livre II, La Cassette</i>
+                        </p>
+                        <span class="hider"></span>
+                    </div>
+                    <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#2">Voir plus</a></p>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
-                        <div class="quote">
+                        <div class="modal-body">
                             <blockquote>
                                 "La politique de l'autruche, c'est une politique qui court vite, une politique qui fait des gros œufs, c'est tout."
                             </blockquote>
@@ -131,37 +129,41 @@
                                 Karadoc,
                                 <i>Livre II, La Cassette</i>
                             </p>
-                            <span class="hider"></span>
-                        </div>
-                        <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#2">Voir plus</a></p>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div>
-                            <div class="modal-body">
-                                <blockquote>
-                                    "La politique de l'autruche, c'est une politique qui court vite, une politique qui fait des gros œufs, c'est tout."
-                                </blockquote>
-                                <p class="source">
-                                    Karadoc,
-                                    <i>Livre II, La Cassette</i>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="img-box">
-                            <img class="kaamelott-underline" src="/img/livre-4-les-chaperons.jpg" alt="Perceval, Livre IV, Les Chaperons">
+            <!-- FIN 2EME QUOTE -->
+
+            <!-- 3EME QUOTE -->
+
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="img-box">
+                        <img class="kaamelott-underline" src="img/livre-4-les-chaperons.jpg" alt="Perceval, Livre IV, Les Chaperons">
+                    </div>
+                    <div class="quote">
+                        <blockquote>
+                            "En plus, je connais une technique pour tuer trois hommes en un coup rien qu’avec des feuilles mortes ! Alors là, vous êtes deux, vous avez bien de la chance."
+                        </blockquote>
+                        <p class="source">
+                            Perceval,
+                            <i>Livre IV, Les Chaperons</i>
+                        </p>
+                        <span class="hider"></span>
+                    </div>
+                    <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#3">Voir plus</a></p>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
-                        <div class="quote">
+                        <div class="modal-body">
                             <blockquote>
                                 "En plus, je connais une technique pour tuer trois hommes en un coup rien qu’avec des feuilles mortes ! Alors là, vous êtes deux, vous avez bien de la chance."
                             </blockquote>
@@ -169,37 +171,41 @@
                                 Perceval,
                                 <i>Livre IV, Les Chaperons</i>
                             </p>
-                            <span class="hider"></span>
-                        </div>
-                        <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#3">Voir plus</a></p>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div>
-                            <div class="modal-body">
-                                <blockquote>
-                                    "En plus, je connais une technique pour tuer trois hommes en un coup rien qu’avec des feuilles mortes ! Alors là, vous êtes deux, vous avez bien de la chance."
-                                </blockquote>
-                                <p class="source">
-                                    Perceval,
-                                    <i>Livre IV, Les Chaperons</i>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="img-box">
-                            <img class="kaamelott-underline" src="/img/livre-2-sept-cent-quarante-quatre.jpg" alt="Karadoc, Livre II, Sept cent quarante-quatre">
+            <!-- FIN 3EME QUOTE -->
+
+            <!-- 4EME QUOTE -->
+
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="img-box">
+                        <img class="kaamelott-underline" src="img/livre-2-sept-cent-quarante-quatre.jpg" alt="Karadoc, Livre II, Sept cent quarante-quatre">
+                    </div>
+                    <div class="quote">
+                        <blockquote>
+                            "Par exemple, vous prenez aujourd’hui. Vous comptez sept jours. Ça vous emmène dans une semaine. Et bien on sera exactement le même jour qu’aujourd’hui… À une vache près, hein… C’est pas une science exacte."
+                        </blockquote>
+                        <p class="source">
+                            Karadoc,
+                            <i>Livre II, Sept cent quarante-quatre</i>
+                        </p>
+                        <span class="hider"></span>
+                    </div>
+                    <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#4">Voir plus</a></p>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
-                        <div class="quote">
+                        <div class="modal-body">
                             <blockquote>
                                 "Par exemple, vous prenez aujourd’hui. Vous comptez sept jours. Ça vous emmène dans une semaine. Et bien on sera exactement le même jour qu’aujourd’hui… À une vache près, hein… C’est pas une science exacte."
                             </blockquote>
@@ -207,37 +213,41 @@
                                 Karadoc,
                                 <i>Livre II, Sept cent quarante-quatre</i>
                             </p>
-                            <span class="hider"></span>
-                        </div>
-                        <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#4">Voir plus</a></p>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div>
-                            <div class="modal-body">
-                                <blockquote>
-                                    "Par exemple, vous prenez aujourd’hui. Vous comptez sept jours. Ça vous emmène dans une semaine. Et bien on sera exactement le même jour qu’aujourd’hui… À une vache près, hein… C’est pas une science exacte."
-                                </blockquote>
-                                <p class="source">
-                                    Karadoc,
-                                    <i>Livre II, Sept cent quarante-quatre</i>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="img-box">
-                            <img class="kaamelott-underline" src="/img/livre-2-corpore-sano.jpg" alt="Perceval, Livre I, Ambidextrie">
+            <!-- FIN 4EME QUOTE -->
+
+            <!-- 5EME QUOTE -->
+
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="img-box">
+                        <img class="kaamelott-underline" src="img/livre-2-corpore-sano.jpg" alt="Perceval, Livre I, Ambidextrie">
+                    </div>
+                    <div class="quote">
+                        <blockquote>
+                            "Qu’est-ce que c’est que ce style de bouffer des petits machins tout secs et trois gallons de flotte par jour ? […] Si la jeunesse se met à croire à ces conneries, on se dirige tout droit vers une génération de dépressifs ! Le gras, c’est la vie."
+                        </blockquote>
+                        <p class="source">
+                            Karadoc,
+                            <i>Livre II, Corpore sano</i>
+                        </p>
+                        <span class="hider"></span>
+                    </div>
+                    <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#5">Voir plus</a></p>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
-                        <div class="quote">
+                        <div class="modal-body">
                             <blockquote>
                                 "Qu’est-ce que c’est que ce style de bouffer des petits machins tout secs et trois gallons de flotte par jour ? […] Si la jeunesse se met à croire à ces conneries, on se dirige tout droit vers une génération de dépressifs ! Le gras, c’est la vie."
                             </blockquote>
@@ -245,37 +255,41 @@
                                 Karadoc,
                                 <i>Livre II, Corpore sano</i>
                             </p>
-                            <span class="hider"></span>
-                        </div>
-                        <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#5">Voir plus</a></p>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div>
-                            <div class="modal-body">
-                                <blockquote>
-                                    "Qu’est-ce que c’est que ce style de bouffer des petits machins tout secs et trois gallons de flotte par jour ? […] Si la jeunesse se met à croire à ces conneries, on se dirige tout droit vers une génération de dépressifs ! Le gras, c’est la vie."
-                                </blockquote>
-                                <p class="source">
-                                    Karadoc,
-                                    <i>Livre II, Corpore sano</i>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <div class="img-box">
-                            <img class="kaamelott-underline" src="/img/livre-1-l-imposteur.jpg" alt="Perceval, Livre I, Ambidextrie">
+            <!-- FIN 5EME QUOTE -->
+
+            <!-- 6EME QUOTE -->
+
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <div class="img-box">
+                        <img class="kaamelott-underline" src="img/livre-1-l-imposteur.jpg" alt="Perceval, Livre I, Ambidextrie">
+                    </div>
+                    <div class="quote">
+                        <blockquote>
+                            "Au bout d'un moment, il est vraiment druide, c'mec-là, ou ça fait quinze ans qu'il me prend pour un con ?"
+                        </blockquote>
+                        <p class="source">
+                            Arthur,
+                            <i>Livre I, L’Imposteur</i>
+                        </p>
+                        <span class="hider"></span>
+                    </div>
+                    <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#6">Voir plus</a></p>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
-                        <div class="quote">
+                        <div class="modal-body">
                             <blockquote>
                                 "Au bout d'un moment, il est vraiment druide, c'mec-là, ou ça fait quinze ans qu'il me prend pour un con ?"
                             </blockquote>
@@ -283,39 +297,27 @@
                                 Arthur,
                                 <i>Livre I, L’Imposteur</i>
                             </p>
-                            <span class="hider"></span>
-                        </div>
-                        <p class="item-actions"><a href="#" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#6">Voir plus</a></p>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div>
-                            <div class="modal-body">
-                                <blockquote>
-                                    "Au bout d'un moment, il est vraiment druide, c'mec-là, ou ça fait quinze ans qu'il me prend pour un con ?"
-                                </blockquote>
-                                <p class="source">
-                                    Arthur,
-                                    <i>Livre I, L’Imposteur</i>
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- 1ERE ROW-->
 
-        <footer>
-            <!-- Add footer here -->
     </div>
+    <!--CONTAINER-->
 
-    <footer>
-        <!-- Add footer here -->
+    <!-- FIN 6EME QUOTE -->
+
+    <!-- Add footer here -->
+
+    <footer class="footer">
+        <div class="container-fluid footy">
+            <a href="#"><i class="fa fa-twitter-square rs1" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-facebook-square rs1" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-github-square rs1" aria-hidden="true"></i></a>
+
+        </div>
     </footer>
 
     <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
