@@ -48,18 +48,22 @@
             <p>Ajoutez votre citation !</p>
         </div>
 
-        <form class="form">
+        <form class="form" onsubmit="postQuote(this);return false;">
             <div class="form-group">
                 <label for="author">L'auteur</label>
-                <input type="text" class="form-control" id="author" placeholder="Perceval">
+                <input name="author" type="text" class="form-control" placeholder="Perceval">
             </div>
             <div class="form-group">
                 <label for="quote">La citation</label>
-                <textarea class="form-control" id="quote" name="name" rows="8" cols="80" placeholder="Votre citation ici ..."></textarea>
+                <textarea name="content" class="form-control" id="quote" name="name" rows="8" cols="80" placeholder="Votre citation ici ..."></textarea>
             </div>
 
-            <label class="control-label">Select File</label>
-            <input id="input-1a" type="file" class="file" data-show-preview="true" data-preview-file-type="image">
+            <div class="form-group">
+                <label class="control-label">Select File</label>
+                <input name="image" id="input-1a" type="file" class="file" data-show-preview="true" data-preview-file-type="image">
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
         </form>
     </div>
 
@@ -75,6 +79,7 @@
     <!-- optionally if you need translation for your language then include
     locale file as mentioned below -->
     <script src="vendor/bootstrap-fileinput/js/locales/fr.js"></script>
+    <script type="text/javascript" src="js/add-quote.js"></script>
 </body>
 
 </html>

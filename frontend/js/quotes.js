@@ -1,19 +1,39 @@
 const BACKEND_URL = "http://localhost:3000";
 
-getQuotes(BACKEND_URL);
+getQuotes();
 
-function getQuotes(url) {
+function getQuotes() {
+    console.log("Getting quotes ...");
     const request = new XMLHttpRequest();
 
-    console.log("Getting quotes ...");
-    request.open('get', `${url}/quotes`, true);
+    request.open('get', `${BACKEND_URL}/quotes`, true);
     request.onreadystatechange = function() {
         if (request.readyState === XMLHttpRequest.DONE) {
-            if (request.status == 200) { // OK
+            if (request.status === 200) { // OK
                 console.log("Done");
                 displayQuotes(JSON.parse(request.responseText));
             } else {
                 console.error("🚨 Error getting the quotes from the server 🚨");
+                displayErrors(request);
+            }
+        }
+    };
+    request.send();
+}
+
+function deleteQuote(quoteId) {
+
+    console.log(`Deleting quote #${quoteId} ...`);
+    const request = new XMLHttpRequest();
+
+    request.open('delete', `${BACKEND_URL}/quotes/${quoteId}`, true);
+    request.onreadystatechange = function() {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) { // OK
+                removeQuoteFromPage(quoteId);
+                displayDeletionSuccess(quoteId);
+            } else {
+                console.error(`🚨 Error when deleting quote #${quoteId} 🚨`);
                 displayErrors(request);
             }
         }
@@ -30,10 +50,20 @@ function displayQuotes(quotes) {
     });
 }
 
+function displayDeletionSuccess(quoteId) {
+    console.log(`Deleted quote #${quoteId}`);
+    // TODO : alert or bootstrap message
+}
+
+function displayErrors(request) {
+    // TODO : alert or bootstrap message
+}
+
 function buildQuote(quote) {
-    console.log("Building quote", quote);
+    console.log(`Building quote #${quote.id}`);
     let quoteDiv = document.createElement('div');
     quoteDiv.className = "col-sm-6 col-md-4";
+    quoteDiv.id = `quote-${quote.id}`;
     quoteDiv.innerHTML = `<div class="thumbnail">
             <div class="img-box">
                 <img class="kaamelott-underline" src="${quote.image}" alt="${quote.author}, ${quote.chapter}, ${quote.episode}">
@@ -48,11 +78,11 @@ function buildQuote(quote) {
                 </p>
                 <span class="hider"></span>
             </div>
-            <p class="item-actions"><a href="#" class="btn btn-danger" role="button" onclick="deleteQuote(${quote.id})"">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#${quote.id}">Voir plus</a></p>
+            <p class="item-actions"><a href="#" class="btn btn-danger" role="button" onclick="event.preventDefault();deleteQuote(${quote.id})">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="modal-quote-${quote.id}">Voir plus</a></p>
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="${quote.id}" tabindex="-1" role="dialog" ">
+    <div class="modal fade" id="modal-quote-${quote.id}" tabindex="-1" role="dialog" >
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -70,4 +100,9 @@ function buildQuote(quote) {
             </div>
         </div>`;
     return quoteDiv;
+}
+
+function removeQuoteFromPage(quoteId) {
+    let quoteDiv = document.getElementById(`quote-${quoteId}`);
+    quoteDiv.parentNode.removeChild(quoteDiv);
 }
