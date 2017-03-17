@@ -19,11 +19,11 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                 </a>
             </div>
-            <p class="navbar-text ">Pour <a href="#" class="navbar-link">ajouter une citation</a></p>
+            <p class="navbar-text ">Pour <a href="./citation.html" class="navbar-link">ajouter une citation</a></p>
         </div>
     </nav>
 
@@ -36,23 +36,31 @@
         <!-- formulaire -->
         <form>
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <label for="auteur">Auteur</label>
+                <input type="email" class="form-control" id="auteur" placeholder="Auteur">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <label for="citation">Citation</label>
+                <input type="password" class="form-control" id="citation" placeholder="Citation">
             </div>
             <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input type="file" id="exampleInputFile">
-                <p class="help-block">Example block-level help text here.</p>
+                <label for="citation">Episode</label>
+                <input type="password" class="form-control" id="episode" placeholder="Episode">
             </div>
-            <div class="checkbox">
-                <label>
-      <input type="checkbox"> Check me out
-    </label>
+            <div class="form-group">
+                <label for="citation">Saison</label>
+                <input type="password" class="form-control" id="saison" placeholder="Saison">
             </div>
+            <div class="form-group">
+                <label for="citation">Date</label>
+                <input type="password" class="form-control" id="date" placeholder="Date">
+            </div>
+            <div class="form-group">
+                <label for="image">Image</label>
+                <input type="file" id="image">
+                <p class="help-block">Moment où le personnage prononce la citation dans l'épisode</p>
+            </div>
+
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
 
