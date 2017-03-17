@@ -53,6 +53,24 @@
       "content": "Au bout d'un moment, il est vraiment druide, c'mec-là, ou ça fait quinze ans qu'il me prend pour un con ?",
       "date": "",
       "image": "img/livre-1-l-imposteur.jpg"
+    },
+    {
+      "author": "Perceval",
+      "chapter": "Livre II",
+      "episode": "Les Exploités",
+      "content": "Sire, Sire ! On en a gros !",
+      "date": "2017-03-17T11:48:39.150Z",
+      "image": "http://www.demotivateur.fr/images-buzz/4771/7d70499bb048568c5dzd6d12d5b89aafbb6.jpg",
+      "id": 7
+    },
+    {
+      "author": "Perceval",
+      "chapter": "Livre II",
+      "episode": "Un Roi à la Taverne II",
+      "content": "J'voudrais pas faire ma raclette, mais la soirée s'annonce pas super.",
+      "date": "2017-03-17T11:55:33.520Z",
+      "image": "http://www.demotivateur.fr/images-buzz/4771/7d70499bb048568c5dzd6d12d5b89aafbb6.jpg",
+      "id": 8
     }
   ]
 }

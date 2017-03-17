@@ -25,18 +25,18 @@
       <p>Les meilleurs citations de la serie-TV Kaamelott</p>
     </div>
 
-    <form>
+    <div>
       <div class="form-group">
         <label for="author">Nom de l'auteur</label>
         <input type="text" class="form-control" id="author" placeholder="ex: Karadoc">
       </div>
       <div class="form-group">
         <label for="quote">Citation</label>
-        <textaera type="text" class="form-control" id="quote" placeholder="ex: Le gras, c’est la vie.">
+        <textarea type="text" class="form-control" id="quote" placeholder="ex: Le gras, c’est la vie."></textarea>
       </div>
       <div class="form-group">
-        <label for="saison">Saison</label>
-        <select id="saison "class="form-control">
+        <label for="chapter">Saison</label>
+        <select id="chapter" class="form-control">
           <option>Livre I</option>
           <option>Livre II</option>
           <option>Livre III</option>
@@ -56,8 +56,8 @@
       </div>
 
 
-      <button class="btn btn-default">Créer une citation</button>
-    </form>
+      <button class="btn btn-default" onclick="postArticles()">Créer une citation</button>
+    </div>
 
   </div>
 
@@ -77,6 +77,7 @@
 
   <script type="text/javascript" src="vendor/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/new.js"></script>
 
 </body>
 </html>
