@@ -1,4 +1,4 @@
-/************************************************\
+                /************************************************\
 ==================================================
 1. Font
 2. Navbar
@@ -6,110 +6,123 @@
 4. Footer
 ==================================================
 \************************************************/
-
-
-/************************************************\
+                /************************************************\
 ==================================================
 1. Font
 ==================================================
 \************************************************/
 
-@font-face {
-    font-family: 'Folkard';
-    src: url('/fonts/folkard_.ttf');
-}
+                @font-face {
+                    font-family: 'Folkard';
+                    src: url('/fonts/folkard_.ttf');
+                }
 
-.kaamelott-font {
-    font-family: 'Folkard';
-}
-
-
-/************************************************\
+                .kaamelott-font {
+                    font-family: 'Folkard';
+                }
+                /************************************************\
 ==================================================
 2. Navbar
 ==================================================
 \************************************************/
 
+                .navbar {
+                    margin-bottom: 2px;
+                    color: black;
+                }
 
-/************************************************\
+                .navbar-default {
+                    background-color: #e0b971;
+                    border-color: #a57824;
+                }
+
+                .navbar-default .navbar-brand {
+                    color: black;
+                }
+
+                .navbar-default .navbar-text {
+                    color: black;
+                }
+                .navbar-default .navbar-link {
+        color: black;}
+
+                /************************************************\
 ==================================================
 3. Citation
 ==================================================
 \************************************************/
 
-.kaamelott-underline {
-    border-bottom: solid 5px #a57824;
-}
+                .kaamelott-underline {
+                    border-bottom: solid 5px #a57824;
+                }
 
-.kaamelott-banner.jumbotron {
-    background-image: url(../img/kaamelott-banner.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
+                .kaamelott-banner.jumbotron {
+                    background-image: url(../img/kaamelott-banner.jpg);
+                    background-position: top center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    color: white;
+                }
 
-p.source {
-    text-align: right;
-}
+                p.source {
+                    text-align: right;
+                }
 
-.quote {
-    height: 150px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    position: relative;
-}
+                .quote {
+                    height: 150px;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    position: relative;
+                }
 
-.quote .hider {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background: linear-gradient(0deg, #fff, transparent);
-}
+                .quote .hider {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100px;
+                    background: linear-gradient(0deg, #fff, transparent);
+                }
 
-.thumbnail .img-box {
-    max-height: 200px;
-    overflow: hidden;
-}
+                .thumbnail .img-box {
+                    max-height: 200px;
+                    overflow: hidden;
+                }
 
-.thumbnail .img-box img {
-    width: 100%;
-}
+                .thumbnail .img-box img {
+                    width: 100%;
+                }
 
-.thumbnail {
-    height: 420px;
-    max-width: 500px;
-    margin: auto;
-    margin-bottom: 15px;
-}
+                .thumbnail {
+                    height: 420px;
+                    max-width: 500px;
+                    margin: auto;
+                    margin-bottom: 15px;
+                }
 
-.thumbnail blockquote {
-    padding: 10px;
-    border-left: none;
-}
+                .thumbnail blockquote {
+                    padding: 10px;
+                    border-left: none;
+                }
 
-blockquote {
-    border-left: 5px solid #a57824;
-}
+                blockquote {
+                    border-left: 5px solid #a57824;
+                }
 
-.item-actions {
-    text-align: right;
-    padding: 0 5px;
-}
+                .item-actions {
+                    text-align: right;
+                    padding: 0 5px;
+                }
 
-.btn.btn-kaamelott {
-    background-color: #a57824;
-    color: white;
-}
+                .btn.btn-kaamelott {
+                    background-color: #a57824;
+                    color: white;
+                }
 
-.btn.btn-kaamelott:hover {
-    background-color: #996f21;
-}
-
-
-/************************************************\
+                .btn.btn-kaamelott:hover {
+                    background-color: #996f21;
+                }
+                /************************************************\
 ==================================================
 4. Footer
 ==================================================
