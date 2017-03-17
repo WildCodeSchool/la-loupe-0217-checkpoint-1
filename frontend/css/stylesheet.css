@@ -60,7 +60,7 @@ top:15px ;*/
 }
 
 .kaamelott-underline {
-background-image: url('img/kaamelott-banner.jpg');
+background-image: url('../img/kaamelott-banner.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
