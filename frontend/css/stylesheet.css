@@ -19,7 +19,6 @@
 .kaamelott-font {
   font-family: 'Folkard';
 }
-
 /************************************************\
 ==================================================
 2. Navbar
@@ -56,7 +55,6 @@ nav{
 .couleur{
 	color:a57824;
 }
-
 .kaamelott-banner.jumbotron {
   background-image: url('../img/kaamelott-banner.jpg');
   background-position: top center;
@@ -64,18 +62,15 @@ nav{
   background-size: cover;
   color: white;
 }
-
 p.source {
   text-align: right;
 }
-
 .quote {
   height: 150px;
   overflow: hidden;
   margin-bottom: 10px;
   position: relative;
 }
-
 .quote .hider {
   position: absolute;
   bottom: 0;
@@ -84,47 +79,37 @@ p.source {
   height: 100px;
   background: linear-gradient(0deg, #fff, transparent);
 }
-
 .thumbnail .img-box {
   max-height: 200px;
   overflow: hidden;
 }
-
 .thumbnail .img-box img {
   width: 100%;
 }
-
 .thumbnail {
   height: 420px;
   max-width: 500px;
   margin: auto;
   margin-bottom: 15px;
 }
-
 .thumbnail blockquote {
   padding: 10px;
   border-left: none;
 }
-
 blockquote {
   border-left: 5px solid #a57824;
 }
-
 .item-actions {
   text-align: right;
   padding: 0 5px;
 }
-
 .btn.btn-kaamelott {
   background-color: #a57824;
   color: white;
 }
-
 .btn.btn-kaamelott:hover {
   background-color: #996f21;
 }
-
-
 /************************************************\
 ==================================================
 4. Footer
@@ -134,7 +119,6 @@ blockquote {
 	background-color:#996f21;
 	font-size: 30px;
 	height: 100px;
-
 }
 .picto{
 	margin-top: %;
