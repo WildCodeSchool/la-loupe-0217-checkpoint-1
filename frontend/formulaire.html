@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a href="file:///home/wolfy/Documents/checkpoint/la-loupe-0217-checkpoint-1/frontend/index.html"><img src="img/logo.jpeg" alt="" width="60" height="60"></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <h1>Ajouter une nouvelle citation : </h1>
+    <form>
+        <p>Auteur: <input type="text" id="auteur" />
+            <input type="button" value="Add" onclick="getAuthor();" /></p>
+    </form>
+    <form>
+        <p>Citation: <input type="text" id=citation "" />
+            <input type="button" value="Add" onclick="getCitation();" /></p>
+    </form>
+    <form>
+        <p>Episode: <input type="text" id="episode" />
+            <input type="button" value="Add" onclick="getEpisode();" /></p>
+    </form>
+    <form>
+        <p>Saison: <input type="text" id="saison" />
+            <input type="button" value="Add" onclick="getSeason();" /></p>
+    </form>
+    <form>
+        <p>Date d'ajout: <input type="text" id="date" />
+            <input type="button" value="Add" onclick="getDate();" /></p>
+    </form>
+    <table id="articles">
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="myRequest.js"></script>
+
+
+</body>
+
+</html>
