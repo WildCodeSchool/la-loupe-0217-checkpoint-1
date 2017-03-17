@@ -7,19 +7,22 @@
 ==================================================
 \************************************************/
 
+
 /************************************************\
 ==================================================
 1. Font
 ==================================================
 \************************************************/
+
 @font-face {
-  font-family: 'Folkard';
-  src: url('/fonts/folkard_.ttf');
+    font-family: 'Folkard';
+    src: url('/fonts/folkard_.ttf');
 }
 
 .kaamelott-font {
-  font-family: 'Folkard';
+    font-family: 'Folkard';
 }
+
 
 /************************************************\
 ==================================================
@@ -27,86 +30,142 @@
 ==================================================
 \************************************************/
 
+h1 {
+    text-align: center;
+}
+
+#titre {
+    text-align: center;
+}
+
+#logo {
+    margin-top: -18px;
+}
+
+
 
 /************************************************\
 ==================================================
 3. Citation
 ==================================================
 \************************************************/
+
 .kaamelott-underline {
-  border-bottom: solid 5px #a57824;
+    border-bottom: solid 5px #a57824;
 }
 
 .kaamelott-banner.jumbotron {
-  background-image: url('/img/kaamelott-banner.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+    background-image: url("../img/kaamelott-banner.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin-top: -25px;
 }
 
 p.source {
-  text-align: right;
+    text-align: right;
 }
 
 .quote {
-  height: 150px;
-  overflow: hidden;
-  margin-bottom: 10px;
-  position: relative;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
 }
 
 .quote .hider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: linear-gradient(0deg, #fff, transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(0deg, #fff, transparent);
 }
 
 .thumbnail .img-box {
-  max-height: 200px;
-  overflow: hidden;
+    max-height: 200px;
+    overflow: hidden;
 }
 
 .thumbnail .img-box img {
-  width: 100%;
+    width: 100%;
 }
 
 .thumbnail {
-  height: 420px;
-  max-width: 500px;
-  margin: auto;
-  margin-bottom: 15px;
+    height: 420px;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 .thumbnail blockquote {
-  padding: 10px;
-  border-left: none;
+    padding: 10px;
+    border-left: none;
 }
 
 blockquote {
-  border-left: 5px solid #a57824;
+    border-left: 5px solid #a57824;
 }
 
 .item-actions {
-  text-align: right;
-  padding: 0 5px;
+    text-align: right;
+    padding: 0 5px;
 }
 
 .btn.btn-kaamelott {
-  background-color: #a57824;
-  color: white;
+    background-color: #a57824;
+    color: white;
 }
 
 .btn.btn-kaamelott:hover {
-  background-color: #996f21;
+    background-color: #996f21;
 }
+
+form label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+form input {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    width: 200px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+form {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#submit {
+    text-align: center;
+}
+
+
 
 
 /************************************************\
 ==================================================
-4. Footer
+
 ==================================================
 \************************************************/
+#footer {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #F2F3F3;
+}
+#RS {
+    text-align: center;
+    margin-top: 45px;
+}
