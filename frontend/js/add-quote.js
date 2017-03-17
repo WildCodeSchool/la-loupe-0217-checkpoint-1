@@ -14,7 +14,8 @@ function postQuote(form) {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 201) { // Created
                 console.log("Done");
-                // TODO : redirect ?
+                alert("Votre citation a bien été postée !")
+                // TODO : redirect ? autre choe que alert ?
             } else {
                 console.error("🚨 Error sending the quote to the server 🚨");
                 console.error(request);

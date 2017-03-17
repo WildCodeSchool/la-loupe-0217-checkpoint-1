@@ -12,3 +12,10 @@
 - delay and transition when deleting quotes ? ?
 - refactor js
 - validation
+- ase664 for images
+
+To do :
+- additionnal fields for champs
+
+To improve :
+- footer

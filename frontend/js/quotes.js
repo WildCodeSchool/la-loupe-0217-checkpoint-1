@@ -48,6 +48,9 @@ function displayQuotes(quotes) {
     quotes.forEach(function(quote) {
         quoteContainer.appendChild(buildQuote(quote));
     });
+    $('.modal').modal({
+        show: false
+    });
 }
 
 function displayDeletionSuccess(quoteId) {
@@ -78,14 +81,18 @@ function buildQuote(quote) {
                 </p>
                 <span class="hider"></span>
             </div>
-            <p class="item-actions"><a href="#" class="btn btn-danger" role="button" onclick="event.preventDefault();deleteQuote(${quote.id})">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="modal-quote-${quote.id}">Voir plus</a></p>
+            <p class="item-actions">
+                <a href="#" class="btn btn-danger" role="button" onclick="event.preventDefault();deleteQuote(${quote.id})">Supprimer</a>
+                <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="modal-quote-${quote.id}" onclick="$('#modal-quote-${quote.id}').modal('show');">Voir plus</a>
+            </p>
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="modal-quote-${quote.id}" tabindex="-1" role="dialog" >
+    <div class="modal fade" id="modal-quote-${quote.id}" tabindex="-1" role="dialog" aria-labelledby="modal-quote-${quote.id}-label">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h4 class="modal-title" id="modal-quote-${quote.id}-label">Citation de ${quote.author}</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
