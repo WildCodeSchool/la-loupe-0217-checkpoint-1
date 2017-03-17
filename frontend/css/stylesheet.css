@@ -12,6 +12,11 @@
 1. Font
 ==================================================
 \************************************************/
+.container fluid {
+    width: 100%;
+}
+
+
 @font-face {
   font-family: 'Folkard';
   src: url('/fonts/folkard_.ttf');
@@ -21,6 +26,12 @@
   font-family: 'Folkard';
 }
 
+header {
+  margin-top: 15px;
+}
+.logo{
+  margin-top: 30px;
+}
 /************************************************\
 ==================================================
 2. Navbar
@@ -42,7 +53,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  text-align: center;
 }
 
 p.source {
@@ -62,7 +73,6 @@ p.source {
   left: 0;
   right: 0;
   height: 100px;
-  background: linear-gradient(0deg, #fff, transparent);
 }
 
 .thumbnail .img-box {
@@ -88,11 +98,14 @@ p.source {
 
 blockquote {
   border-left: 5px solid #a57824;
+  padding-bottom: 50px;
+
 }
 
 .item-actions {
   text-align: right;
   padding: 0 5px;
+  padding-top: 50px;
 }
 
 .btn.btn-kaamelott {
@@ -103,7 +116,11 @@ blockquote {
 .btn.btn-kaamelott:hover {
   background-color: #996f21;
 }
-
+.réseaux{
+  text-align: center;
+  width: 500x;
+  height: 500px;
+}
 
 /************************************************\
 ==================================================
