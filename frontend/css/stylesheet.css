@@ -26,7 +26,11 @@
 2. Navbar
 ==================================================
 \************************************************/
-
+.navbar-brand>img {
+  height: 250%;
+  margin-top: -15px;
+  width: auto;
+}
 
 /************************************************\
 ==================================================
@@ -38,7 +42,8 @@
 }
 
 .kaamelott-banner.jumbotron {
-  background-image: url('/img/kaamelott-banner.jpg');
+
+  background-image: url("../img/kaamelott-banner.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
