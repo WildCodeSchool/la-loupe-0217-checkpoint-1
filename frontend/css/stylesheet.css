@@ -13,8 +13,8 @@
 ==================================================
 \************************************************/
 @font-face {
-  font-family: 'Folkard', 'font-awesome';
-  src: url('/fonts/folkard_.ttf'), url('../css/font-awesome.min.css');
+  font-family: 'Folkard';
+  src: url('/fonts/folkard_.ttf');
 }
 
 .kaamelott-font {
@@ -36,6 +36,12 @@ nav .logo {
   margin: 5px;
 }
 
+span.lien a {
+  color: black;
+  padding-left: 40px;
+  font-size: 15px;
+}
+
 span.lien a:hover {
   text-decoration: none;
 }
@@ -50,10 +56,8 @@ span.lien a:hover {
 }
 
 .kaamelott-banner.jumbotron {
-  background-image: url('/img/kaamelott-banner.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('img/kaamelott-banner.jpg');
+
   color: white;
 }
 
@@ -122,9 +126,6 @@ blockquote {
 4. Footer
 ==================================================
 \************************************************/
-footer {
-  font-family:
-}
 
 .kaamelott-overline {
   border-top: solid 5px #a57824;
