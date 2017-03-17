@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cestpasfaux.com</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="index.html"><img id="K_logo" src="img/Kaamelott_logo.png" alt='logo'></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="ajout.html">Ajout citation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="ajout.html">Ajout citation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <h2>Formulaire d'ajout de citations Kaamelott</h2>
+        <form action="#" method="post">
+            <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
+            <fieldset>
+                <label for="author">Auteur <em>*</em></label>
+                <input id="author" placeholder="Perceval de Galles" autofocus="" required=""><br>
+                <label for="chapter">Livre <em>*</em></label>
+                <input id="chapter" placeholder="Livre III" required=""><br>
+                <label for="episode">Episode <em>*</em></label>
+                <input id="episode" placeholder="Episode 84" required=""><br>
+                <label for="content">Citation <em>*</em></label>
+                <input id="content" placeholder="On en a gros !" required=""><br>
+                <label for="date">Date</label>
+                <input id="date" placeholder=""><br>
+                <label for="image">Image </label>
+                <input id="image" placeholder="url"><br>
+            </fieldset>
+            <p><input type="submit" value="Soummettre"></p>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="vendor/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
