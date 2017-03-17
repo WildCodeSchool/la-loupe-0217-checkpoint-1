@@ -14,7 +14,7 @@
 \************************************************/
 @font-face {
   font-family: 'Folkard';
-  src: url('/fonts/folkard_.ttf');
+  src: url('../fonts/folkard_.ttf');
 }
 
 .kaamelott-font {
@@ -26,7 +26,15 @@
 2. Navbar
 ==================================================
 \************************************************/
+nav h1 a, nav h4 a {
+  text-decoration: none;
+  color: #a57824;
+}
 
+nav h1 a:hover, nav h4 a:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
 
 /************************************************\
 ==================================================
@@ -38,7 +46,7 @@
 }
 
 .kaamelott-banner.jumbotron {
-  background-image: url('/img/kaamelott-banner.jpg');
+  background-image: url('../img/kaamelott-banner.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,3 +118,7 @@ blockquote {
 4. Footer
 ==================================================
 \************************************************/
+footer .social {
+  text-align: center;
+  font-size: 2.5em;
+}
