@@ -45,7 +45,7 @@ height: 50px;
 }
 
 .kaamelott-banner.jumbotron {
-  background-image: url(../img/kaamelott-banner.jpg);
+  background-image: url('../img/kaamelott-banner.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

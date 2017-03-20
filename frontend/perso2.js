@@ -1,5 +1,5 @@
 function getArticles() {
-
+  console.log(this.responseText);
 
 	const req = new XMLHttpRequest();
   req.onload = reqListener;
@@ -10,7 +10,7 @@ req.send();
 function reqListener() {
 
     var resultat = JSON.parse(this.responseText);
-  console.log(this.responseText);
+
     var author = resultat.author;
     var chapter = resultat.chapter;
     var episode = resultat.episode;
