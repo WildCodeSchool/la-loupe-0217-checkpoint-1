@@ -5,7 +5,8 @@ const createArticles = function () {
     chapter: document.getElementById('saison').value,
     content: document.getElementById('quote').value,
     image: document.getElementById('img').value,
-    episode: document.getElementById('episod').value
+    episode: document.getElementById('episod').value,
+    date: new Date()
   };
 
   var req = new XMLHttpRequest
