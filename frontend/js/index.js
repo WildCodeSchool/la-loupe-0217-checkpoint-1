@@ -26,11 +26,11 @@ const getArticles = function () {
                   </p>
                   <span class="hider"></span>
                 </div>
-                <p class="item-actions"><a onclick="deleteArticles(${article.id})" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#1">Voir plus</a></p>
+                <p class="item-actions"><a onclick="deleteArticles(${article.id})" class="btn btn-danger" role="button">Supprimer</a> <a href="#" class="btn btn-kaamelott" role="button" data-toggle="modal" data-target="#${article.id}">Voir plus</a></p>
               </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="${article.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
